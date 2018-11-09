@@ -26,8 +26,8 @@ namespace ParseUrlApi
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{url}",
-                defaults: new { url = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{base64encode_url}",
+                defaults: new { base64encode_url = RouteParameter.Optional }
             );
         }
     }
